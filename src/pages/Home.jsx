@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { runningOutItens, diversity, isRecent } from "../Functions/HomeFunctions"
 import "../styles/Home.css"
 
 function Home(){
@@ -14,73 +15,40 @@ function Home(){
         getInfos().then((res) => setMyInfos(() => res))
     },[])
 
-    const diversity = () => {
-        let numbo = 0
-        const foundNames = []
-        myInfos.forEach((dif) => {
-            if (!foundNames.includes(dif.Nome)) {
-                foundNames.push(dif.Nome)
-                numbo++
-            }
-        })
-        return numbo
-    }
-
-    const runningOutItens = () => {
-        let numbo = 0
-        myInfos.forEach((item) => {
-            if(item.Quantidade <= 10 ){
-                numbo++
-            }
-        })
-        return numbo
-    }
-
-    const isRecent = (itemDate) => {
-        const currentDate = new Date()
-        const itemDateObj = new Date(itemDate)
-        const differenceInMs = currentDate - itemDateObj
-        const differenceInDays = differenceInMs / (1000 * 60 * 60 * 24)
-        return differenceInDays <= 30
-    }
-
     const recentItemsCount = myInfos.filter((item) => isRecent(item.DataAtual)).length
-    
+    const diversityCount = diversity(myInfos)
+    const runningOut = runningOutItens(myInfos)
+
 
     return(
         <>
             <div className="Title"><h1>Dashboard</h1></div>
-
             <div className="ContainerForItens">
                 <div className="Content">
                     <div className="ContainerP">
                         <p>Diversidade de itens</p>
                     </div>
-                    <span className="Value" id="Divesity">{diversity()}</span>
+                    <span className="Value" id="Divesity">{diversityCount}</span>
                 </div>
-
                 <div className="Content">
                     <div className="ContainerP">
                         <p>Inventário total</p>
                     </div>
                     <span className="Value" id="Total">{myInfos.length}</span>
                 </div>
-
                 <div className="Content">
                     <div className="ContainerP">
                         <p>Itens recentes</p>
                     </div>
                     <span className="Value" id="RecentItens">{recentItemsCount}</span>
                 </div>
-
                 <div className="Content">
                     <div className="ContainerP">
                         <p>Itens acabando</p>
                     </div>
-                    <span className="Value" id="runningOutItens">{runningOutItens()}</span>
+                    <span className="Value" id="runningOutItens">{runningOut}</span>
                 </div>
             </div>
-
             <div className="ContainerForActions">
                 <div>
                     <div className="TitleTables">
@@ -99,7 +67,6 @@ function Home(){
                     <div id="OffItens"></div>
                 </div>
             </div>
-
         </>
     )
 }
