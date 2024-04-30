@@ -18,11 +18,7 @@ export default function Itens(){
 
     useEffect(() => {
         getMyItens().then(res => {
-            console.log(`Catch`)
-            console.log(res)
             setItens(res)
-            console.log(setItens)
-            console.log(loadMyItens)
         })
     },[])
 

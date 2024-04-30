@@ -9,6 +9,26 @@
       "Descricao": "Tenis Addidas Old School",
       "DataAtual": "Tue, 30 Apr 2024 12:07:41 GMT",
       "Att": "Tue, 30 Apr 2024 12:07:41 GMT"
+    },
+    {
+      "id": "18a0",
+      "Nome": "PS2",
+      "Quantidade": "10",
+      "Preco": "180",
+      "Categoria": "Eletrônico",
+      "Descricao": "PS2 Edição Especial",
+      "DataAtual": "Tue, 30 Apr 2024 12:11:20 GMT",
+      "Att": "Tue, 30 Apr 2024 12:11:20 GMT"
+    },
+    {
+      "id": "78b2",
+      "Nome": "Sabonete",
+      "Quantidade": "15",
+      "Preco": "1.50",
+      "Categoria": "Higiêne",
+      "Descricao": "Sabonete contra stress.",
+      "DataAtual": "Tue, 30 Apr 2024 12:11:54 GMT",
+      "Att": "Tue, 30 Apr 2024 12:11:54 GMT"
     }
   ]
 }
