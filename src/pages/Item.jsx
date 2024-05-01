@@ -25,7 +25,7 @@ export default function Item(){
             <>
             <div>
                 <h3>{item.Nome}</h3>
-                <Link><button>Atualizar</button></Link>
+                <Link to={`/itens/edit/${ItemID}`}><button>Atualizar</button></Link>
                 <button onClick={async () => {
                     await fetch(`http://localhost:3000/storage/${ItemID}`,{
                         method: "DELETE"

@@ -1,34 +1,54 @@
 {
   "storage": [
     {
-      "id": "82c5",
-      "Nome": "Tenis Addidas",
-      "Quantidade": "10",
-      "Preco": "350",
-      "Categoria": "Jogo",
-      "Descricao": "Tenis Addidas Old School",
-      "DataAtual": "Tue, 30 Apr 2024 12:07:41 GMT",
-      "Att": "Tue, 30 Apr 2024 12:07:41 GMT"
-    },
-    {
-      "id": "18a0",
-      "Nome": "PS2",
-      "Quantidade": "10",
-      "Preco": "180",
-      "Categoria": "Eletrônico",
-      "Descricao": "PS2 Edição Especial",
-      "DataAtual": "Tue, 30 Apr 2024 12:11:20 GMT",
-      "Att": "Tue, 30 Apr 2024 12:11:20 GMT"
-    },
-    {
       "id": "78b2",
-      "Nome": "Sabonete",
+      "Nome": "Camomila",
       "Quantidade": "15",
-      "Preco": "1.50",
+      "Preco": "10",
       "Categoria": "Higiêne",
-      "Descricao": "Sabonete contra stress.",
+      "Descricao": "Sabonete",
       "DataAtual": "Tue, 30 Apr 2024 12:11:54 GMT",
-      "Att": "Tue, 30 Apr 2024 12:11:54 GMT"
+      "Att": "Wed, 01 May 2024 07:49:26 GMT"
+    },
+    {
+      "id": "3af3",
+      "Nome": "Teclado Gamer",
+      "Quantidade": "9",
+      "Preco": "155.99",
+      "Categoria": "Eletrônico",
+      "Descricao": "Teclado RedGame",
+      "DataAtual": "Wed, 01 May 2024 06:14:27 GMT",
+      "Att": "Wed, 01 May 2024 06:14:27 GMT"
+    },
+    {
+      "id": "c3da",
+      "Nome": "Iphone",
+      "Quantidade": "20",
+      "Preco": "8000",
+      "Categoria": "Eletrônico",
+      "Descricao": "Iphone XV",
+      "DataAtual": "Wed, 01 May 2024 06:14:57 GMT",
+      "Att": "Wed, 01 May 2024 07:47:07 GMT"
+    },
+    {
+      "id": "9836",
+      "Nome": "Mouse Gamer",
+      "Quantidade": "15",
+      "Preco": "80",
+      "Categoria": "Eletrônico",
+      "Descricao": "Mouse Gamer 1 ",
+      "DataAtual": "Wed, 01 May 2024 06:15:13 GMT",
+      "Att": "Wed, 01 May 2024 06:15:13 GMT"
+    },
+    {
+      "id": "e990",
+      "Nome": "Mouse Gamer",
+      "Quantidade": "9",
+      "Preco": "55",
+      "Categoria": "Eletrônico",
+      "Descricao": "Mouse Gamer Barato",
+      "DataAtual": "Wed, 01 May 2024 06:15:47 GMT",
+      "Att": "Wed, 01 May 2024 06:15:47 GMT"
     }
   ]
 }

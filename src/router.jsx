@@ -4,6 +4,7 @@ import Home from "./pages/Home"
 import Itens from "./pages/Itens";
 import NewItem from "./pages/NewItem";
 import Item from "./pages/Item";
+import Edit from "./pages/Edit";
 
 const router = createBrowserRouter([
     {
@@ -21,6 +22,9 @@ const router = createBrowserRouter([
         },{
             path: "newItem",
             element: <NewItem/>
+        },{
+            path: "itens/edit/:editID",
+            element: <Edit/>
         }]
     }
 ])

@@ -9,4 +9,19 @@
 .ContainerForActions{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
 }
+
+.TitleRecent, .TitleRecentItens {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.TitlesOverItens, .OverItens{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+
+

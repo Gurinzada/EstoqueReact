@@ -20,6 +20,22 @@ const runningOutItens = (myInfos) => {
     return numbo
 }
 
+const outItens = (myInfos) => {
+    let myArray = []
+    myInfos.forEach((item) => {
+        if(item.Quantidade <= 10){
+            const Over = {
+                id: item.id,
+                Quantidade: item.Quantidade,
+                Nome: item.Nome
+            }
+            myArray.push(Over)
+        }
+    })
+
+    return myArray
+}
+
 const isRecent = (itemDate) => {
     const currentDate = new Date()
     const itemDateObj = new Date(itemDate)
@@ -28,4 +44,4 @@ const isRecent = (itemDate) => {
     return differenceInDays <= 30
 }
 
-export {diversity, runningOutItens, isRecent}
+export {diversity, runningOutItens, isRecent, outItens}

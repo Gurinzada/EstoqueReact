@@ -40,7 +40,7 @@ export default function Itens(){
                         <span id="Categoria">{item.Categoria}</span>
                         <div className="Actions">
                             <Link to={`/itens/${item.id}`}><button className="Bnt blue">Ver</button></Link>
-                            <button className="Bnt white">Atualizar</button>
+                            <Link to={`/itens/edit/${item.id}`}><button className="Bnt white">Atualizar</button></Link>
                             <button className="Bnt red" onClick={async () => {
                     await fetch(`http://localhost:3000/storage/${item.id}`,{
                         method: "DELETE"
